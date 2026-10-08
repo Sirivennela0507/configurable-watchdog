@@ -1,0 +1,8 @@
+openlane/watchdog_timer/runs/
+__pycache__/
+*.pyc
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db

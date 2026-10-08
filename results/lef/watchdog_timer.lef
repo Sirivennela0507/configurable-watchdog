@@ -1,0 +1,230 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO watchdog_timer
+  CLASS BLOCK ;
+  FOREIGN watchdog_timer ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 41.400 BY 52.120 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 11.755 10.640 13.355 41.140 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 19.230 10.640 20.830 41.140 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 26.705 10.640 28.305 41.140 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 34.180 10.640 35.780 41.140 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 17.115 35.780 18.715 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 24.590 35.780 26.190 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 32.065 35.780 33.665 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 39.540 35.780 41.140 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 8.455 10.640 10.055 41.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 15.930 10.640 17.530 41.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 23.405 10.640 25.005 41.040 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 30.880 10.640 32.480 41.040 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 13.815 35.660 15.415 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 21.290 35.660 22.890 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 28.765 35.660 30.365 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 36.240 35.660 37.840 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 23.840 4.000 24.440 ;
+    END
+  END clk
+  PIN count[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 0.000 22.910 4.000 ;
+    END
+  END count[0]
+  PIN count[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 20.440 4.000 21.040 ;
+    END
+  END count[1]
+  PIN count[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END count[2]
+  PIN count[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.400 34.040 41.400 34.640 ;
+    END
+  END count[3]
+  PIN enable
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 30.640 4.000 31.240 ;
+    END
+  END enable
+  PIN kick
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 34.040 4.000 34.640 ;
+    END
+  END kick
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 37.440 4.000 38.040 ;
+    END
+  END rst
+  PIN timeout[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.400 13.640 41.400 14.240 ;
+    END
+  END timeout[0]
+  PIN timeout[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.400 23.840 41.400 24.440 ;
+    END
+  END timeout[1]
+  PIN timeout[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.400 20.440 41.400 21.040 ;
+    END
+  END timeout[2]
+  PIN timeout[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 37.400 17.040 41.400 17.640 ;
+    END
+  END timeout[3]
+  PIN wdt_reset
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 0.000 16.470 4.000 ;
+    END
+  END wdt_reset
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 35.420 40.885 ;
+      LAYER met1 ;
+        RECT 4.670 10.640 35.780 41.040 ;
+      LAYER met2 ;
+        RECT 4.690 4.280 35.750 40.985 ;
+        RECT 4.690 3.670 15.910 4.280 ;
+        RECT 16.750 3.670 22.350 4.280 ;
+        RECT 23.190 3.670 35.750 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 38.440 37.400 40.965 ;
+        RECT 4.400 37.040 37.400 38.440 ;
+        RECT 4.000 35.040 37.400 37.040 ;
+        RECT 4.400 33.640 37.000 35.040 ;
+        RECT 4.000 31.640 37.400 33.640 ;
+        RECT 4.400 30.240 37.400 31.640 ;
+        RECT 4.000 28.240 37.400 30.240 ;
+        RECT 4.400 26.840 37.400 28.240 ;
+        RECT 4.000 24.840 37.400 26.840 ;
+        RECT 4.400 23.440 37.000 24.840 ;
+        RECT 4.000 21.440 37.400 23.440 ;
+        RECT 4.400 20.040 37.000 21.440 ;
+        RECT 4.000 18.040 37.400 20.040 ;
+        RECT 4.000 16.640 37.000 18.040 ;
+        RECT 4.000 14.640 37.400 16.640 ;
+        RECT 4.000 13.240 37.000 14.640 ;
+        RECT 4.000 10.715 37.400 13.240 ;
+  END
+END watchdog_timer
+END LIBRARY
+
