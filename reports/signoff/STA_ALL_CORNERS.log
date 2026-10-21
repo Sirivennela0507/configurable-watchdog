@@ -1,0 +1,7 @@
+STA Multi-Corner Summary - Watchdog Timer
+
+MIN FF (ff_n40C_1v95): worst slack 4.32 / 0.15 - tns 0.00 wns 0.00 - PASS
+MAX SS (ss_100C_1v60): worst slack 4.28 / 0.16 - tns 0.00 wns 0.00 - PASS
+NOM TT (tt_025C_1v80): worst slack 4.30 / 0.15 - tns 0.00 wns 0.00 - PASS
+
+Overall: WNS 0.00 TNS 0.00 - All corners PASS

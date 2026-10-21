@@ -6,3 +6,10 @@ __pycache__/
 *~
 .DS_Store
 Thumbs.db
+
+# Generated simulation artifacts
+
+# Temporary editor and operating-system files
+
+# Generated simulation executable
+sim/watchdog_sim

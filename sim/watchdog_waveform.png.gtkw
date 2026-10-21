@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Fri Oct  9 16:38:19 2026
+[*]
+[dumpfile] "/home/vsduser/Desktop/assessments/watchdog/sim/dump.vcd"
+[dumpfile_mtime] "Fri Oct  9 16:36:15 2026"
+[dumpfile_size] 1203
+[savefile] "/home/vsduser/Desktop/assessments/watchdog/sim/watchdog_waveform.png.gtkw"
+[timestart] 0
+[size] 1920 983
+[pos] -1 -1
+*-15.117796 160000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 206
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 338
+@28
+tb.clk
+@22
+tb.count[3:0]
+@28
+tb.kick
+@29
+tb.wdt_reset
+[pattern_trace] 1
+[pattern_trace] 0
