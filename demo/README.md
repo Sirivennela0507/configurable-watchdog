@@ -20,6 +20,10 @@ watchdog asserts a reset output.
 - Review static timing analysis (STA) results.
 - Review physical verification evidence, including DRC and LVS.
 
+## Demo Review
+
+Click here to view demo video - https://drive.google.com/file/d/1uFaESmMQE6RRD8SPOTxHrbvsKIOwRxtS/view?usp=sharing
+
 ## Functional Overview
 
 The watchdog uses a clock, reset/control inputs, a heartbeat/kick input,
